@@ -48,3 +48,4 @@ end
 
 gem 'faker'
 gem 'devise'
+gem 'whenever', :require => false

@@ -1,10 +1,9 @@
-<h2>To Do List </h2>
-<% user.items.each do |item| %>
-<%= item.name %></br>
-<% end %>
+
+
 <%= form_for Item.new, :url => user_items_path(:id) do |f| %>
 <%= f.label :name %>
 <%= f.text_field :name %>
+
 <%= f.hidden_field :user_id, value: user.id %>
 <%= f.submit "Save" %>
 <% end %>
